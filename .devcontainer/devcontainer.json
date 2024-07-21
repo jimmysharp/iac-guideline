@@ -1,0 +1,17 @@
+{
+  "name": "starlight",
+  "dockerComposeFile": ["../compose.yml", "compose.devcontainer.yml"],
+  "service": "starlight",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "unifiedjs.vscode-mdx",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "github.copilot"
+      ]
+    }
+  }
+}
