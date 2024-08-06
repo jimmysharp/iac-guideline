@@ -35,4 +35,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
   },
+  site: 'https://jimmysharp.github.io',
+  base: '/iac-guideline/',
 });
