@@ -6,6 +6,12 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Terraform Guideline',
+      locales: {
+        root: {
+          label: '日本語',
+          lang: 'ja',
+        },
+      },
       sidebar: [
         {
           label: 'はじめに',
