@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   integrations: [
     starlight({
-      title: 'Terraform Guideline',
+      title: 'IaC Guideline',
       locales: {
         root: {
           label: '日本語',
