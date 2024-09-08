@@ -19,12 +19,7 @@ export default defineConfig({
         },
         {
           label: 'Terraform',
-          items: [
-            {
-              label: 'はじめに',
-              autogenerate: { directory: 'terraform/introduction' },
-            },
-          ],
+          autogenerate: { directory: 'terraform' },
         },
         {
           label: 'CDK for AWS',
