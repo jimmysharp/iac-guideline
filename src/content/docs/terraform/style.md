@@ -57,15 +57,18 @@ resource "aws_lb" "this" {
 
 パラメータは以下の順序で指定します
 
-1. メタ変数 (count、for_each)
-2. 非ブロックパラメータ
-3. ブロックパラメータ
-4. タグ
-5. lifecycleブロック
-6. depends_onブロック
+1. プロバイダー指定
+2. メタ変数 (count、for_each)
+3. 非ブロックパラメータ
+4. ブロックパラメータ
+5. タグ
+6. lifecycleブロック
+7. depends_onブロック
 
 ```hcl
 resource "aws_instance" "example" {
+  # プロバイダー
+  provider = aws.virginia
   # メタ変数
   count = 2
 
