@@ -1,6 +1,40 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    ":semanticCommits",
+    ":semanticPrefixChore",
+    ":ignoreModulesAndTests",
+    "group:monorepos",
+    "group:recommended",
+    "replacements:all",
+    "workarounds:all",
+    ":disableDependencyDashboard",
+    ":prHourlyLimitNone"
+  ],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["every weekend"],
+  "prConcurrentLimit": 15,
+  "automerge": false,
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted",
+  "labels": ["dependencies"],
+  "configMigration": true,
+  "packageRules": [
+    {
+      "description": "Update Node.js to the LTS version",
+      "matchPackageNames": ["node"],
+      "matchManagers": ["dockerfile"],
+      "allowedVersions": "/^[0-9]*[02468]([.-].*)?$/"
+    },
+    {
+      "groupName": "eslint",
+      "matchPackageNames": ["eslint", "eslint-{/,}**", "@eslint/{/,}**"]
+    },
+    {
+      "description": "Group all patch updates",
+      "groupName": "patch-updates",
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    }
   ]
 }
