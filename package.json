@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/starlight": "^0.30.3",
-    "astro": "^5.1.0",
+    "astro": "^5.1.1",
     "sharp": "^0.33.5",
     "typescript": "^5.7.2"
   },
@@ -30,5 +30,5 @@
   "engines": {
     "node": "22.12.0"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@9.15.1"
 }
