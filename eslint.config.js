@@ -2,7 +2,7 @@ import prettier from 'eslint-config-prettier';
 import markdown from 'eslint-plugin-markdown';
 import * as mdx from 'eslint-plugin-mdx';
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
+/** @type {import("eslint").Linter.Config[]} */
 export default [
   // Markdown
   ...markdown.configs.recommended,
