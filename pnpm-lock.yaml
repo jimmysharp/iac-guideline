@@ -13,10 +13,10 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.2)(typescript@5.7.3)
       '@astrojs/starlight':
         specifier: ^0.32.2
-        version: 0.32.2(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
+        version: 0.32.2(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
       astro:
-        specifier: ^5.4.0
-        version: 5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
+        specifier: ^5.4.1
+        version: 5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -53,6 +53,9 @@ packages:
 
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
+
+  '@astrojs/compiler@2.10.4':
+    resolution: {integrity: sha512-86B3QGagP99MvSNwuJGiYSBHnh8nLvm2Q1IFI15wIUJJsPeQTO3eb2uwBmrqRsXykeR/mBzH8XCgz5AAt1BJrQ==}
 
   '@astrojs/internal-helpers@0.6.0':
     resolution: {integrity: sha512-XgHIJDQaGlFnTr0sDp1PiJrtqsWzbHP2qkTU+JpQ8SnBewKP2IKOe/wqCkl0CyfyRXRu3TSWu4t/cpYMVfuBNA==}
@@ -850,8 +853,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.4.0:
-    resolution: {integrity: sha512-7A//zrCtJUGfJcQAt6PDhMu4a6pogvnK54HLXnYlPnKSWQZu/tKIYWfyvocVnTuEYIPExIN3CpjNAFFLoweJVw==}
+  astro@5.4.1:
+    resolution: {integrity: sha512-z9BiBz8pV7pZVn1evZv/9bJil3A9UZNyEjDFH3IjD87ioz95HHGLgbjRbbqF1EwSy8JOLKlMNyuQPqjrX8xqWw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2912,6 +2915,8 @@ snapshots:
 
   '@astrojs/compiler@2.10.3': {}
 
+  '@astrojs/compiler@2.10.4': {}
+
   '@astrojs/internal-helpers@0.6.0': {}
 
   '@astrojs/language-server@2.15.4(prettier-plugin-astro@0.14.1)(prettier@3.5.2)(typescript@5.7.3)':
@@ -2991,12 +2996,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.0.8(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))':
+  '@astrojs/mdx@4.0.8(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))':
     dependencies:
       '@astrojs/markdown-remark': 6.1.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
+      astro: 5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.4
@@ -3020,16 +3025,16 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/starlight@0.32.2(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))':
+  '@astrojs/starlight@0.32.2(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))':
     dependencies:
-      '@astrojs/mdx': 4.0.8(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
+      '@astrojs/mdx': 4.0.8(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
-      astro-expressive-code: 0.40.2(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
+      astro: 5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
+      astro-expressive-code: 0.40.2(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.2
@@ -3411,7 +3416,7 @@ snapshots:
       ini: 4.1.3
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.6.3
+      semver: 7.7.1
       walk-up-path: 3.0.1
     transitivePeerDependencies:
       - bluebird
@@ -3752,14 +3757,14 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro-expressive-code@0.40.2(astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)):
+  astro-expressive-code@0.40.2(astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)):
     dependencies:
-      astro: 5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
+      astro: 5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1)
       rehype-expressive-code: 0.40.2
 
-  astro@5.4.0(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1):
+  astro@5.4.1(@types/node@20.14.11)(jiti@2.4.2)(rollup@4.34.7)(typescript@5.7.3)(yaml@2.6.1):
     dependencies:
-      '@astrojs/compiler': 2.10.3
+      '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.6.0
       '@astrojs/markdown-remark': 6.2.0
       '@astrojs/telemetry': 3.2.0
@@ -6099,7 +6104,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.3:
     dependencies:
-      semver: 7.6.3
+      semver: 7.7.1
 
   typescript@5.7.3: {}
 
@@ -6339,7 +6344,7 @@ snapshots:
   volar-service-typescript@0.0.62(@volar/language-service@2.4.10):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.6.3
+      semver: 7.7.1
       typescript-auto-import-cache: 0.3.3
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
