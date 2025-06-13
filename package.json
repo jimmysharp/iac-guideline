@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/starlight": "^0.34.3",
+    "@astrojs/starlight": "^0.34.4",
     "astro": "^5.8.2",
     "sharp": "^0.34.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "eslint": "^9.28.0",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-markdown": "^5.1.0",
     "eslint-plugin-mdx": "^3.4.2",
     "prettier": "^3.5.3",
