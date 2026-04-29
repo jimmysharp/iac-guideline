@@ -31,12 +31,5 @@
   "engines": {
     "node": "22.18.0"
   },
-  "packageManager": "pnpm@10.14.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp"
-    ]
-  }
+  "packageManager": "pnpm@11.0.0"
 }
