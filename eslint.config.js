@@ -1,11 +1,20 @@
 import prettier from 'eslint-config-prettier';
-import markdown from 'eslint-plugin-markdown';
+import markdown from '@eslint/markdown';
 import * as mdx from 'eslint-plugin-mdx';
+import { defineConfig } from 'eslint/config';
 
-/** @type {import("eslint").Linter.Config[]} */
-export default [
+export default defineConfig([
   // Markdown
-  ...markdown.configs.recommended,
+  {
+    files: ['**/*.md'],
+    plugins: {
+      markdown,
+    },
+    extends: ['markdown/recommended'],
+    rules: {
+      'markdown/no-missing-label-refs': 'off',
+    },
+  },
   // MDX
   mdx.flat,
   // prettier
@@ -14,4 +23,4 @@ export default [
   {
     ignores: ['node_modules/', '.pnpm-store/', 'dist/', '.astro/'],
   },
-];
+]);

@@ -7,7 +7,7 @@ description: Terraformプロジェクトのディレクトリ構造と役割
 
 Terraformプロジェクトのディレクトリ構造は以下のように設計します。
 
-```
+```text
 project_root/
 ├ envs/
 │ └ {env_name}/
@@ -33,7 +33,7 @@ project_root/
 :::info
 ex) VPCとフロント・バックエンドシステムがあり、本番・検証環境の2環境がある場合
 
-```
+```text
 project_root/
 ├ envs/
 │ ├ production/
@@ -169,7 +169,7 @@ terraform {
 
 本ファイルの内容は秘密情報であり、**Gitにコミットしてはなりません**。
 
-```
+```text
 database_user     = "xxxxxx"
 database_password = "xxxxxx"
 ```
@@ -213,7 +213,7 @@ resourceブロックによるリソース作成を記載します。
 Terraformプロバイダーが採用するリソース種別によりグループ化を行い、グループごとにファイルを用意します。
 サービス名変更などでプロバイダー上のグループが実態と異なる場合(Kinesis Firehose -> Data Firehoseなど)、無理にグループを一致させる必要はありません。また適宜短縮名を採用します。
 
-```
+```text
 frontend/
 ├ autoscaling.tf
 ├ cwalarm.tf
