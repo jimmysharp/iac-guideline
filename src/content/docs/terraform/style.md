@@ -110,7 +110,7 @@ resource "aws_instance" "example" {
   4. sensitive
   5. validation
 
-```
+```hcl
 variable "db_password" {
   type        = "string"
   description = "DBのルートパスワード"
@@ -127,7 +127,7 @@ variable "db_password" {
 
 :::caution[Not so good]
 
-```
+```hcl
 variables "max_memory" {}
 ```
 
@@ -135,7 +135,7 @@ variables "max_memory" {}
 
 :::note[Better]
 
-```
+```hcl
 variables "max_memory_gigabytes" {}
 ```
 
